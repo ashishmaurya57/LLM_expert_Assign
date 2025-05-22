@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+openai
+faiss-cpu
+python-dotenv
+sqlalchemy
+psycopg2-binary
+python-multipart
+pypdf
+tqdm
+langchain
+chromadb
+streamlit
+requests
+PyPDF2
+sentence-transformers
+

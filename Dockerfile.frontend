@@ -1,0 +1,18 @@
+# Base image
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /frontend
+
+
+COPY requirements.txt ./requirements.txt
+COPY rag_frontend.py ./rag_frontend.py
+
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+
+EXPOSE 8501
+
+# Run Streamlit
+CMD ["streamlit", "run", "rag_frontend.py", "--server.port=8501", "--server.address=0.0.0.0"]
